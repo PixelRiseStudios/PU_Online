@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta name="keywords" content="Poornima University, Online Learning, Study Materials, Quizzes, Certificate Courses, Online Exams, Higher Education, Academic Excellence, Professional Development, Study Resources, Question Papers, Practice Exercises, Reference Guides, Programming, Digital Marketing, Language Proficiency, Interactive Learning, Performance Tracking, Learning Platform, Education Revolution, Convenient Learning">
+    <meta name="author" content="Sourav Chhimpa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="PU Online">
+    <meta property="og:description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNjVXK3R5LdzE1AoHKpUhQUHmWHpcY30CjwKHKGPPlZe5y4OxXOOBhWru0Y2dBRxJXqJx2pqqyHCR61-GG1CyAHPicHGE2kqDO7nZay0zHCqv11zTGzGs51-redDX3cor3I1t3LZycUhrYLKcxlmnC8ERRcIqcDXYUl8fYs3jWdd42R9HrIhyphenhyphenmoyHv9uU/s1080/3d%20Illustration%20Online%20Course%20Learning%20Education%20Instagram%20Post.png">
+    <meta property="og:url" content="https://pixelrisestudios.github.io/PU_Online/">
+    <meta property="og:type" content="website">
+<link rel="icon" href="https://img.icons8.com/external-itim2101-lineal-color-itim2101/100/external-Online-Class-education-and-learning-itim2101-lineal-color-itim2101.png">
+    <title>HTML Attributes Mastery: Practical Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="../../CSS/header-footer.css">
+    <link rel="stylesheet" href="../../CSS/quize/tips.css">
+    <link rel="stylesheet" href="../../CSS/quize/quiz-question.css">
+
+</head>
+<body>
+      <!-- Header Section Start -->
+  <header id="header">
+    <div class="container">
+      <div class="header_left">
+        <h1 class="pu-online"><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;">PU</span> Online <span class="pu-span">By PRS</span></h1>
+      </div>
+      <div class="header_right">
+        <a href="#!" class="nav_ico" id="nav_icon"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/circled-menu--v2.png" alt="circled-menu--v2"/></a>
+        <a href="#!" class="nav_ico" id="nav_icon_alt" style="display:none;"><img width="26" height="26" src="https://img.icons8.com/metro/26/cancel.png" alt="cancel"/></a>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/aboutus.html">About Us</a></li>
+            <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+            <li><a href="../../courses/courses-page.html">Courses</a></li>
+            <li><a href="../../pages/blog.html">Blog</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div> 
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+<div class="quiz-que-container">
+  <h1>HTML Attributes Mastery: Practical Quiz</h1>
+  <div id="quiz"></div>
+  <div id="results"></div>
+  <button id="submit">Submit Answers</button>
+</div>
+<script>
+const quiz = [
+  {
+    question: "What does the 'src' attribute define in the HTML 'img' element?",
+    answers: [
+      { text: "<code>The source of the image</code>", correct: true },
+      { text: "<code>The size of the image</code>", correct: false },
+      { text: "<code>The style of the image</code>", correct: false },
+      { text: "<code>The alternative text of the image</code>", correct: false },
+    ],
+  },
+  {
+    question: "Which attribute is used to specify the URL of the linked resource in the HTML 'a' element?",
+    answers: [
+      { text: "<code>src</code>", correct: false },
+      { text: "<code>href</code>", correct: true },
+      { text: "<code>link</code>", correct: false },
+      { text: "<code>url</code>", correct: false },
+    ],
+  },
+  {
+    question: "What does the 'alt' attribute provide for the HTML 'img' element?",
+    answers: [
+      { text: "<code>Alignment for the image</code>", correct: false },
+      { text: "<code>Action for the image</code>", correct: false },
+      { text: "<code>Alternative text for the image</code>", correct: true },
+      { text: "<code>Animation for the image</code>", correct: false },
+    ],
+  },
+  {
+    question: "Which attribute is used to define the character encoding for the HTML document?",
+    answers: [
+      
+      { text: "<code>encoding</code>", correct: false },
+      { text: "<code>character-set</code>", correct: false },
+      { text: "<code>doc-charset</code>", correct: false },
+      { text: "<code>charset</code>", correct: true },
+    ],
+  },
+  {
+    question: "What does the 'colspan' attribute specify in the HTML 'td' element?",
+    answers: [
+
+      { text: "<code>The color of the cell</code>", correct: false },
+      { text: "<code>The content of the cell</code>", correct: false },
+      { text: "<code>The number of columns a cell should span</code>", correct: true },
+      { text: "<code>The alignment of the cell</code>", correct: false },
+    ],
+  },
+  {
+    question: "Which attribute is used to define the width of a border in the HTML 'table' element?",
+    answers: [
+      { text: "<code>border</code>", correct: true },
+      { text: "<code>border-width</code>", correct: false },
+      { text: "<code>table-width</code>", correct: false },
+      { text: "<code>width</code>", correct: false },
+    ],
+  },
+  {
+    question: "What does the 'placeholder' attribute do in the HTML 'input' element?",
+    answers: [
+      { text: "<code>Specifies a short hint that describes the expected value of the input field</code>", correct: true },
+      { text: "<code>Defines a default value for the input field</code>", correct: false },
+      { text: "<code>Indicates the maximum length of the input field</code>", correct: false },
+      { text: "<code>Determines the alignment of the input field</code>", correct: false },
+    ],
+  },
+  {
+    question: "Which attribute is used to set the initial value of the HTML 'input' element?",
+    answers: [
+      { text: "<code>value</code>", correct: true },
+      { text: "<code>initial</code>", correct: false },
+      { text: "<code>default</code>", correct: false },
+      { text: "<code>init-value</code>", correct: false },
+    ],
+  },
+  {
+    question: "What does the 'colspan' attribute specify in the HTML 'th' element?",
+    answers: [
+      { text: "<code>The number of columns a header cell should span</code>", correct: true },
+      { text: "<code>The color of the header cell</code>", correct: false },
+      { text: "<code>The content of the header cell</code>", correct: false },
+      { text: "<code>The alignment of the header cell</code>", correct: false },
+    ],
+  },
+  {
+    question: "Which attribute is used to define a tooltip text in the HTML 'a' element?",
+    answers: [
+      { text: "<code>tooltip</code>", correct: false },
+      { text: "<code>alt</code>", correct: false },
+      { text: "<code>title</code>", correct: true },
+      { text: "<code>description</code>", correct: false },
+    ],
+  },
+];
+
+const quizContainer = document.getElementById("quiz");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
+
+function buildQuiz() {
+const output = [];
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answers = [];
+
+for (let i = 0; i < currentQuestion.answers.length; i++) {
+answers.push(
+  `<div class="answer" data-question="${questionNumber}" data-answer="${i}">${currentQuestion.answers[i].text}</div>`
+);
+}
+
+output.push(
+`<div class="question">${currentQuestion.question}</div>
+ <div class="answers">${answers.join("")}</div>`
+);
+});
+
+quizContainer.innerHTML = output.join("");
+}
+
+function showResults() {
+const answerContainers = quizContainer.querySelectorAll(".answers");
+
+let numCorrect = 0;
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answerContainer = answerContainers[questionNumber];
+const selector = `div[data-question="${questionNumber}"].selected`;
+const userAnswer = answerContainer.querySelector(selector);
+const isCorrect = userAnswer.dataset.answer === `${currentQuestion.answers.findIndex((answer) => answer.correct)}`;
+
+if (isCorrect) {
+numCorrect++;
+}
+
+userAnswer.classList.remove("selected");
+userAnswer.classList.add(isCorrect ? "correct" : "incorrect");
+});
+
+resultsContainer.innerHTML = `You scored ${numCorrect} out of ${quiz.length}!`;
+}
+
+function handleAnswerClick(event) {
+const answerContainer = event.target.closest(".answers");
+
+if (!answerContainer) return;
+
+const selected = answerContainer.querySelector(".selected");
+if (selected) {
+selected.classList.remove("selected");
+}
+
+const answer = event.target;
+answer.classList.add("selected");
+}
+
+function handleSubmitClick() {
+showResults();
+submitButton.disabled = true;
+}
+
+buildQuiz();
+
+quizContainer.addEventListener("click", handleAnswerClick);
+submitButton.addEventListener("click", handleSubmitClick);
+</script>
+
+  <div class="next-container">
+    <a href="html-quiz2.html">    <button class="btn prev"><i class="fas fa-chevron-left"></i>Previous</button></a>
+    <a href="html-quiz4.html">    <button class="btn next">Next<i class="fas fa-chevron-right"></i></button></a>
+</div>
+  <!-- Footer Section start -->
+  <footer class="main-footer" style="width: 100%; padding:10px;">
+    <div class="footer-content">
+      <div class="footer-top" style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="logo-details">
+          <h3><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;margin-left: 12px;">PU</span> Online</span></h3>
+        
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="link-boxes foot-link">
+        <ul class="footer-box">
+          <li class="link_name">Company</li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../pages/contactus.html">Contact us</a></li>
+          <li><a href="../../pages/aboutus.html">About us</a></li>
+          <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Services</li>
+          <li><a href="../../Services/Notes.html">Notes</a></li>
+          <li><a href="../../Services/samlplepapers.html">Sample Papers</a></li>
+          <li><a href="../../Services/practical-lab.html">Practical Lab</a></li>
+          <li><a href="../../Services/ppt-pdf.html">PPT and PDF</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Quiz Service</li>
+          <li><a href="../../quiz/python/python-quiz1.html">Python</a></li>
+          <li><a href="../../quiz/c/c-quiz1.html">C</a></li>
+          <li><a href="../../quiz/Html/html-quiz1.html">HTML</a></li>
+          <li><a href="../../quiz/css/css-quiz1.html">CSS</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Courses</li>
+          <li><a href="../../courses/front-end.html">Front End Developer</a></li>
+          <li><a href="../../courses/full-stack.html">Full Stack Developer</a></li>
+          <li><a href="../../courses/graphics-designing.html">Graphics Designing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details" style="margin-left:12px">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="../../index.html">PU Online </a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="../../pages/privacy-policy.html">Privacy policy</a>
+          <a href="../../pages/terms-condition.html">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section end -->
+
+  <script src="../../Java Script/scripts.js"></script>
+</body>
+</html>

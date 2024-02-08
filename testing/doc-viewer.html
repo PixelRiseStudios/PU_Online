@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+<title>Quick Tips</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .tips-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .tips-container h2 {
+        text-align: center;
+        color: #3498db;
+        margin-bottom: 20px;
+    }
+    .tip {
+      display: flex;
+      align-items: center;
+      height: 40px;
+        margin-bottom: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+    .tip:hover {
+        background-color: #e0e0e0;
+    }
+    .tip .icon {
+        color: #3498db;
+        font-size: 24px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .tip p {
+        margin-left: 40px;
+    }
+    .correct {
+        background-color: #dff0d8;
+        border-left: 5px solid #4cae4c;
+    }
+    .wrong {
+        background-color: #f2dede;
+        border-left: 5px solid #d9534f;
+    }
+    .selected {
+        background-color: #fce5cd;
+        border-left: 5px solid #f0ad4e;
+    }
+    @media screen and (max-width: 600px) {
+        .tips-container {
+            margin: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="tips-container">
+    <h2>Quick Tips</h2>
+    <div class="tip correct">
+        <i class="fas fa-check-circle icon"></i>
+        <p>Do all questions before you submit.</p>
+    </div>
+    <div class="tip selected">
+        <i class="fas fa-circle-notch icon"></i>
+        <p>Selected option color is orange.</p>
+    </div>
+    <div class="tip correct">
+        <i class="fas fa-check icon"></i>
+        <p>After submit, correct option color is green.</p>
+    </div>
+    <div class="tip wrong">
+        <i class="fas fa-times icon"></i>
+        <p>After submit, wrong answer color is red.</p>
+    </div>
+    <div class="tip">
+        <i class="fas fa-redo icon"></i>
+        <p>To retake the quiz, please reload the page.</p>
+    </div>
+</div>
+
+</body>
+</html>

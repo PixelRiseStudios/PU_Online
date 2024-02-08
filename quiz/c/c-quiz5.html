@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta name="keywords" content="Poornima University, Online Learning, Study Materials, Quizzes, Certificate Courses, Online Exams, Higher Education, Academic Excellence, Professional Development, Study Resources, Question Papers, Practice Exercises, Reference Guides, Programming, Digital Marketing, Language Proficiency, Interactive Learning, Performance Tracking, Learning Platform, Education Revolution, Convenient Learning">
+    <meta name="author" content="Sourav Chhimpa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="PU Online">
+    <meta property="og:description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNjVXK3R5LdzE1AoHKpUhQUHmWHpcY30CjwKHKGPPlZe5y4OxXOOBhWru0Y2dBRxJXqJx2pqqyHCR61-GG1CyAHPicHGE2kqDO7nZay0zHCqv11zTGzGs51-redDX3cor3I1t3LZycUhrYLKcxlmnC8ERRcIqcDXYUl8fYs3jWdd42R9HrIhyphenhyphenmoyHv9uU/s1080/3d%20Illustration%20Online%20Course%20Learning%20Education%20Instagram%20Post.png">
+    <meta property="og:url" content="https://pixelrisestudios.github.io/PU_Online/">
+    <meta property="og:type" content="website">
+<link rel="icon" href="https://img.icons8.com/external-itim2101-lineal-color-itim2101/100/external-Online-Class-education-and-learning-itim2101-lineal-color-itim2101.png">
+    <title>
+      Advanced C Concepts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="../../CSS/header-footer.css">
+    <link rel="stylesheet" href="../../CSS/quize/tips.css">
+    <link rel="stylesheet" href="../../CSS/quize/quiz-question.css">
+
+</head>
+<body>
+      <!-- Header Section Start -->
+  <header id="header">
+    <div class="container">
+      <div class="header_left">
+        <h1 class="pu-online"><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;">PU</span> Online <span class="pu-span">By PRS</span></h1>
+      </div>
+      <div class="header_right">
+        <a href="#!" class="nav_ico" id="nav_icon"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/circled-menu--v2.png" alt="circled-menu--v2"/></a>
+        <a href="#!" class="nav_ico" id="nav_icon_alt" style="display:none;"><img width="26" height="26" src="https://img.icons8.com/metro/26/cancel.png" alt="cancel"/></a>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/aboutus.html">About Us</a></li>
+            <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+            <li><a href="../../courses/courses-page.html">Courses</a></li>
+            <li><a href="../../pages/blog.html">Blog</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div> 
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+<div class="quiz-que-container">
+  <h1>Mastering Advanced C Concepts</h1>
+  <div id="quiz"></div>
+  <div id="results"></div>
+  <button id="submit">Submit Answers</button>
+</div>
+<script>
+ const quiz = [
+  {
+    question: "What is a structure in C?",
+    answers: [
+      { text: "A data type that can hold multiple values of the same type", correct: false },
+      { text: "A user-defined data type that can hold different types of values", correct: true },
+      { text: "A pointer to a function", correct: false },
+      { text: "A reserved word in the C language", correct: false },
+    ],
+  },
+  {
+    question: "How do you declare a structure in C?",
+    answers: [
+      { text: "structure", correct: false },
+      { text: "struct", correct: true },
+      { text: "typedef", correct: false },
+      { text: "type", correct: false },
+    ],
+  },
+  {
+    question: "What is dynamic memory allocation in C?",
+    answers: [
+      { text: "Allocating memory at compile-time", correct: false },
+      { text: "Allocating memory at runtime", correct: true },
+      { text: "Allocating memory on the stack", correct: false },
+      { text: "Allocating memory on the heap", correct: false },
+    ],
+  },
+  {
+    question: "Which function is used to dynamically allocate memory in C?",
+    answers: [
+      { text: "malloc()", correct: true },
+      { text: "calloc()", correct: false },
+      { text: "realloc()", correct: false },
+      { text: "free()", correct: false },
+    ],
+  },
+  {
+    question: "What does 'malloc()' return if it fails to allocate memory in C?",
+    answers: [
+      { text: "NULL", correct: true },
+      { text: "0", correct: false },
+      { text: "Error code", correct: false },
+      { text: "Random value", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the 'free()' function in C?",
+    answers: [
+      { text: "To allocate memory", correct: false },
+      { text: "To deallocate memory", correct: true },
+      { text: "To initialize memory", correct: false },
+      { text: "To resize memory", correct: false },
+    ],
+  },
+  {
+    question: "What is a pointer to a function in C?",
+    answers: [
+      { text: "A function that returns a pointer", correct: false },
+      { text: "A function that takes a pointer as an argument", correct: false },
+      { text: "A pointer that points to a function", correct: true },
+      { text: "A pointer declared inside a function", correct: false },
+    ],
+  },
+  {
+    question: "How do you declare a pointer to a function in C?",
+    answers: [
+      { text: "ptr function_pointer();", correct: false },
+      { text: "function_pointer ptr();", correct: false },
+      { text: "function_pointer (*ptr)();", correct: true },
+      { text: "function_ptr *ptr();", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the 'typedef' keyword in C?",
+    answers: [
+      { text: "To define a new data type", correct: true },
+      { text: "To declare a variable", correct: false },
+      { text: "To initialize a structure", correct: false },
+      { text: "To create a pointer", correct: false },
+    ],
+  },
+  {
+    question: "What does the 'volatile' keyword indicate in C?",
+    answers: [
+      { text: "The variable cannot be modified", correct: false },
+      { text: "The variable may be modified outside the program's control", correct: true },
+      { text: "The variable is a constant", correct: false },
+      { text: "The variable is initialized at runtime", correct: false },
+    ],
+  },
+];
+
+const quizContainer = document.getElementById("quiz");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
+
+function buildQuiz() {
+const output = [];
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answers = [];
+
+for (let i = 0; i < currentQuestion.answers.length; i++) {
+answers.push(
+  `<div class="answer" data-question="${questionNumber}" data-answer="${i}">${currentQuestion.answers[i].text}</div>`
+);
+}
+
+output.push(
+`<div class="question">${currentQuestion.question}</div>
+ <div class="answers">${answers.join("")}</div>`
+);
+});
+
+quizContainer.innerHTML = output.join("");
+}
+
+function showResults() {
+const answerContainers = quizContainer.querySelectorAll(".answers");
+
+let numCorrect = 0;
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answerContainer = answerContainers[questionNumber];
+const selector = `div[data-question="${questionNumber}"].selected`;
+const userAnswer = answerContainer.querySelector(selector);
+const isCorrect = userAnswer.dataset.answer === `${currentQuestion.answers.findIndex((answer) => answer.correct)}`;
+
+if (isCorrect) {
+numCorrect++;
+}
+
+userAnswer.classList.remove("selected");
+userAnswer.classList.add(isCorrect ? "correct" : "incorrect");
+});
+
+resultsContainer.innerHTML = `You scored ${numCorrect} out of ${quiz.length}!`;
+}
+
+function handleAnswerClick(event) {
+const answerContainer = event.target.closest(".answers");
+
+if (!answerContainer) return;
+
+const selected = answerContainer.querySelector(".selected");
+if (selected) {
+selected.classList.remove("selected");
+}
+
+const answer = event.target;
+answer.classList.add("selected");
+}
+
+function handleSubmitClick() {
+showResults();
+submitButton.disabled = true;
+}
+
+buildQuiz();
+
+quizContainer.addEventListener("click", handleAnswerClick);
+submitButton.addEventListener("click", handleSubmitClick);
+</script>
+
+  <div class="next-container">
+<a href="c-quiz4.html">    <button class="btn prev"><i class="fas fa-chevron-left"></i>Previous</button></a>
+<!-- <a href="html-quiz2.html">    <button class="btn next">Next<i class="fas fa-chevron-right"></i></button></a> -->
+</div>
+  <!-- Footer Section start -->
+  <footer class="main-footer" style="width: 100%; padding:10px;">
+    <div class="footer-content">
+      <div class="footer-top" style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="logo-details">
+          <h3><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;margin-left: 12px;">PU</span> Online</span></h3>
+        
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="link-boxes foot-link">
+        <ul class="footer-box">
+          <li class="link_name">Company</li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../pages/contactus.html">Contact us</a></li>
+          <li><a href="../../pages/aboutus.html">About us</a></li>
+          <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Services</li>
+          <li><a href="../../Services/Notes.html">Notes</a></li>
+          <li><a href="../../Services/samlplepapers.html">Sample Papers</a></li>
+          <li><a href="../../Services/practical-lab.html">Practical Lab</a></li>
+          <li><a href="../../Services/ppt-pdf.html">PPT and PDF</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Quiz Service</li>
+          <li><a href="../../quiz/python/python-quiz1.html">Python</a></li>
+          <li><a href="../../quiz/c/c-quiz1.html">C</a></li>
+          <li><a href="../../quiz/Html/html-quiz1.html">HTML</a></li>
+          <li><a href="../../quiz/css/css-quiz1.html">CSS</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Courses</li>
+          <li><a href="../../courses/front-end.html">Front End Developer</a></li>
+          <li><a href="../../courses/full-stack.html">Full Stack Developer</a></li>
+          <li><a href="../../courses/graphics-designing.html">Graphics Designing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details" style="margin-left:12px">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="../../index.html">PU Online </a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="../../pages/privacy-policy.html">Privacy policy</a>
+          <a href="../../pages/terms-condition.html">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section end -->
+
+  <script src="../../Java Script/scripts.js"></script>
+</body>
+</html>

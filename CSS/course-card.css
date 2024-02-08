@@ -1,0 +1,114 @@
+.card-main-container  {
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .course-card {
+    position: relative;
+    width: 330px;
+    padding: 20px;
+    background-color: rgb(255 255 255);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 0.6ms  ease-in-out;
+  }
+
+  .course-card:hover {
+    border: 1px solid black;
+  }
+  .course-card button {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .course-card button:hover {
+    background: linear-gradient(bottom to, red, blue);
+  }
+
+  .explore {
+    display: inline-block;
+    margin-top: 26px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .explore:hover {
+    color: rgb(98, 0, 255);
+    text-decoration: underline rgb(98, 0, 255);
+  }
+
+  .explore:hover > .arrow {
+    background-color: rgb(98, 0, 255);
+    color: white;
+  }
+
+  .arrow {
+    background-color: rgba(128, 128, 128, 0.196);
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 9px;
+    padding: 6px;
+    border-radius: 12px;
+  }
+
+  .side-cr {
+    justify-content: center;
+    align-items: center;
+    height: 120%;
+    width: 100%;
+    right: -70%;
+    top: -10%;
+    background-color: aquamarine;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .image-container {
+height: 100px;
+width: 110px;
+margin-top: 25%;
+}
+
+.image-container img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 10%;
+}
+.view-more-button {
+text-align: center;
+font-weight: 600;
+color: rgb(55, 142, 213);
+text-decoration:underline;
+}
+
+  /* Make it responsive */
+  @media (max-width: 600px) {
+    .course-card {
+      width: 330px;
+      margin: 10px;
+    }
+
+    .side-cr {
+      height: 120%;
+      width: 100%;
+      right: -70%;
+      top: -10%;
+    }
+    .image-container {
+height: 100px;
+width: 100px;
+margin-top: 25%;
+}
+  }

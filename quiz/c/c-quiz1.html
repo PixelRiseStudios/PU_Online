@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta name="keywords" content="Poornima University, Online Learning, Study Materials, Quizzes, Certificate Courses, Online Exams, Higher Education, Academic Excellence, Professional Development, Study Resources, Question Papers, Practice Exercises, Reference Guides, Programming, Digital Marketing, Language Proficiency, Interactive Learning, Performance Tracking, Learning Platform, Education Revolution, Convenient Learning">
+    <meta name="author" content="Sourav Chhimpa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="PU Online">
+    <meta property="og:description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNjVXK3R5LdzE1AoHKpUhQUHmWHpcY30CjwKHKGPPlZe5y4OxXOOBhWru0Y2dBRxJXqJx2pqqyHCR61-GG1CyAHPicHGE2kqDO7nZay0zHCqv11zTGzGs51-redDX3cor3I1t3LZycUhrYLKcxlmnC8ERRcIqcDXYUl8fYs3jWdd42R9HrIhyphenhyphenmoyHv9uU/s1080/3d%20Illustration%20Online%20Course%20Learning%20Education%20Instagram%20Post.png">
+    <meta property="og:url" content="https://pixelrisestudios.github.io/PU_Online/">
+    <meta property="og:type" content="website">
+<link rel="icon" href="https://img.icons8.com/external-itim2101-lineal-color-itim2101/100/external-Online-Class-education-and-learning-itim2101-lineal-color-itim2101.png">
+    <title>C Fundamentals</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="../../CSS/header-footer.css">
+    <link rel="stylesheet" href="../../CSS/quize/tips.css">
+    <link rel="stylesheet" href="../../CSS/quize/quiz-question.css">
+
+</head>
+<body>
+      <!-- Header Section Start -->
+  <header id="header">
+    <div class="container">
+      <div class="header_left">
+        <h1 class="pu-online"><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;">PU</span> Online <span class="pu-span">By PRS</span></h1>
+      </div>
+      <div class="header_right">
+        <a href="#!" class="nav_ico" id="nav_icon"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/circled-menu--v2.png" alt="circled-menu--v2"/></a>
+        <a href="#!" class="nav_ico" id="nav_icon_alt" style="display:none;"><img width="26" height="26" src="https://img.icons8.com/metro/100/cancel.png" alt="cancel"/></a>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/aboutus.html">About Us</a></li>
+            <li><a href="../../pages/get-updates.  html">Get Updates</a></li>
+            <li><a href="../../courses/courses-page.html">Courses</a></li>
+            <li><a href="../../pages/blog.html">Blog</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div> 
+    </div>
+  </header>
+  <!-- Header Section End -->
+  
+  <div class="tips-container">
+    <h1 style="color: #3f3f3f; font-size: 28px; text-align: center; margin-bottom: 20px;">Test Your C Knowledge: Essential Concepts and Syntax</h1>
+    <!-- <p style="color: #555; font-size: 16px; line-height: 1.5; text-align: justify;">Welcome to our C Programming Fundamentals Quiz! This quiz is designed to test your understanding of essential concepts and syntax in the C programming language. Whether you're a beginner looking to solidify your basics or an experienced coder brushing up on your skills, this quiz offers a diverse range of questions covering topics such as data types, control structures, functions, and more. Challenge yourself with multiple-choice questions that delve into the core principles of C programming. Let's see how well you know this fundamental language!</p> -->
+    <br>
+    <h2>Quick Tips</h2>
+    <div class="tip tip-correct">
+        <i class="fas fa-check-circle icon"></i>
+        <p>Do all questions before you submit.</p>
+    </div>
+    <div class="tip tip-selected">
+        <i class="fas fa-circle-notch icon"></i>
+        <p>Selected option color is orange.</p>
+    </div>
+    <div class="tip tip-correct">
+        <i class="fas fa-check icon"></i>
+        <p>After submit, correct option color is green.</p>
+    </div>
+    <div class="tip tip-wrong">
+        <i class="fas fa-times icon"></i>
+        <p>After submit, wrong answer color is red.</p>
+    </div>
+    <div class="tip">
+        <i class="fas fa-redo icon"></i>
+        <p>To retake the quiz, please reload the page.</p>
+    </div>
+</div>
+
+<div class="quiz-que-container">
+    <h2 style="color: #010101; font-size: 28px; text-align: center; margin-bottom: 20px;">Let's Start</h2>
+  <div id="quiz"></div>
+  <div id="results"></div>
+  <button id="submit">Submit Answers</button>
+</div>
+<script>
+const quiz = [
+  {
+    question: "What does the acronym 'C' represent in the C programming language?",
+    answers: [
+      { text: "Computing", correct: false },
+      { text: "Central", correct: false },
+      { text: "Character", correct: false },
+      { text: "None of the above", correct: true },
+    ],
+  },
+  {
+    question: "Who is credited with the development of the C programming language?",
+    answers: [
+      { text: "Dennis Ritchie", correct: true },
+      { text: "Ken Thompson", correct: false },
+      { text: "Brian Kernighan", correct: false },
+      { text: "Bjarne Stroustrup", correct: false },
+    ],
+  },
+  {
+    question: "In C programming, which symbol is used to denote a single-line comment?",
+    answers: [
+      { text: "//", correct: true },
+      { text: "/* */", correct: false },
+      { text: "#", correct: false },
+      { text: "--", correct: false },
+    ],
+  },
+  {
+    question: "Which header file is typically used for input and output operations in C?",
+    answers: [
+      { text: "stdio.h", correct: true },
+      { text: "iostream", correct: false },
+      { text: "stdlib.h", correct: false },
+      { text: "math.h", correct: false },
+    ],
+  },
+  {
+    question: "In C, what data type is primarily used for storing individual characters?",
+    answers: [
+      { text: "int", correct: false },
+      { text: "char", correct: true },
+      { text: "float", correct: false },
+      { text: "double", correct: false },
+    ],
+  },
+  {
+    question: "Which operator is used for finding the remainder in division in C?",
+    answers: [
+      { text: "%", correct: true },
+      { text: "&", correct: false },
+      { text: "|", correct: false },
+      { text: "*", correct: false },
+    ],
+  },
+  {
+    question: "Which of the following is NOT a valid variable name in C?",
+    answers: [
+      { text: "myVariable", correct: false },
+      { text: "_variable", correct: false },
+      { text: "123variable", correct: true },
+      { text: "Variable123", correct: false },
+    ],
+  },
+  {
+    question: "Which loop structure in C is primarily used when the number of iterations is not known beforehand?",
+    answers: [
+      { text: "for loop", correct: false },
+      { text: "while loop", correct: true },
+      { text: "do-while loop", correct: false },
+      { text: "if statement", correct: false },
+    ],
+  },
+  {
+    question: "What does the 'break' statement do in a loop?",
+    answers: [
+      { text: "Ends the loop and continues with the code after the loop", correct: true },
+      { text: "Exits the loop and restarts it from the beginning", correct: false },
+      { text: "Jumps to the next iteration of the loop", correct: false },
+      { text: "None of the above", correct: false },
+    ],
+  },
+  {
+    question: "What determines the size of the 'int' data type in C?",
+    answers: [
+      { text: "It is fixed at 4 bytes on all systems", correct: false },
+      { text: "It varies depending on the compiler and system architecture", correct: true },
+      { text: "It is determined by the programmer at runtime", correct: false },
+      { text: "It is fixed at 8 bytes on all systems", correct: false },
+    ],
+  },
+];
+
+
+const quizContainer = document.getElementById("quiz");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
+
+function buildQuiz() {
+const output = [];
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answers = [];
+
+for (let i = 0; i < currentQuestion.answers.length; i++) {
+answers.push(
+  `<div class="answer" data-question="${questionNumber}" data-answer="${i}">${currentQuestion.answers[i].text}</div>`
+);
+}
+
+output.push(
+`<div class="question">${currentQuestion.question}</div>
+ <div class="answers">${answers.join("")}</div>`
+);
+});
+
+quizContainer.innerHTML = output.join("");
+}
+
+function showResults() {
+const answerContainers = quizContainer.querySelectorAll(".answers");
+
+let numCorrect = 0;
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answerContainer = answerContainers[questionNumber];
+const selector = `div[data-question="${questionNumber}"].selected`;
+const userAnswer = answerContainer.querySelector(selector);
+const isCorrect = userAnswer.dataset.answer === `${currentQuestion.answers.findIndex((answer) => answer.correct)}`;
+
+if (isCorrect) {
+numCorrect++;
+}
+
+userAnswer.classList.remove("selected");
+userAnswer.classList.add(isCorrect ? "correct" : "incorrect");
+});
+
+resultsContainer.innerHTML = `You scored ${numCorrect} out of ${quiz.length}!`;
+}
+
+function handleAnswerClick(event) {
+const answerContainer = event.target.closest(".answers");
+
+if (!answerContainer) return;
+
+const selected = answerContainer.querySelector(".selected");
+if (selected) {
+selected.classList.remove("selected");
+}
+
+const answer = event.target;
+answer.classList.add("selected");
+}
+
+function handleSubmitClick() {
+showResults();
+submitButton.disabled = true;
+}
+
+buildQuiz();
+
+quizContainer.addEventListener("click", handleAnswerClick);
+submitButton.addEventListener("click", handleSubmitClick);
+</script>
+
+  <div class="next-container">
+    <!-- <button class="btn prev"><i class="fas fa-chevron-left"></i>Previous</button> -->
+<a href="c-quiz2.html">    <button class="btn next">Next<i class="fas fa-chevron-right"></i></button></a>
+</div>
+  <!-- Footer Section start -->
+  <footer class="main-footer" style="width: 100%; padding:10px;">
+    <div class="footer-content">
+      <div class="footer-top" style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="logo-details">
+          <h3><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;margin-left: 12px;">PU</span> Online</span></h3>
+        
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="link-boxes foot-link">
+        <ul class="footer-box">
+          <li class="link_name">Company</li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../pages/contactus.html">Contact us</a></li>
+          <li><a href="../../pages/aboutus.html">About us</a></li>
+          <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Services</li>
+          <li><a href="../../Services/Notes.html">Notes</a></li>
+          <li><a href="../../Services/samlplepapers.html">Sample Papers</a></li>
+          <li><a href="../../Services/practical-lab.html">Practical Lab</a></li>
+          <li><a href="../../Services/ppt-pdf.html">PPT and PDF</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Quiz Service</li>
+          <li><a href="../../quiz/python/python-quiz1.html">Python</a></li>
+          <li><a href="../../quiz/c/c-quiz1.html">C</a></li>
+          <li><a href="../../quiz/Html/html-quiz1.html">HTML</a></li>
+          <li><a href="../../quiz/css/css-quiz1.html">CSS</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Courses</li>
+          <li><a href="../../courses/front-end.html">Front End Developer</a></li> 
+          <li><a href="../../courses/full-stack.html">Full Stack Developer</a></li>
+          <li><a href="../../courses/graphics-designing.html">Graphics Designing</a></li> 
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details" style="margin-left:12px">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="../../index.html">PU Online </a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="../../pages/privacy-policy.html">Privacy policy</a>
+          <a href="../../pages/terms-condition.html">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section end -->
+
+  <script src="../../Java Script/scripts.js"></script>
+</body>
+</html>

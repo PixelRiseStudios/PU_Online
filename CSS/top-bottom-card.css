@@ -1,0 +1,127 @@
+.top-card{
+    margin: 10px 0px 10px 0px;
+    width: fit-content;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 15px 0px 0px 0px;
+    box-shadow: 3px 3px 6px rgb(221, 221, 221);
+}
+.top-card-content{
+    margin: 5px;
+    text-align: center;
+    height: 80px;
+    width: 220px;
+    border-radius: 10px;
+}
+.top-card-content h5{
+    padding: 10px 0px 0px 10px;
+}
+.top-card-content img{
+    height: 50px;
+    width: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+@media (max-width:600px) {
+    .top-card{
+    width: 95%;
+    display: block;
+    margin: 10px;
+    font-size: medium;
+}
+.top-card-content{
+    display: flex;
+    text-align: center;
+    height: 80px;
+    width: 95%;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+}
+
+/* QUIZZES SECTION CSS */
+.content-top-section{
+    display: flex;
+    margin-left: 10.7%;
+    margin-right: 0%;
+}
+.content-top-section button{
+    color: rgba(255, 255, 255, 0.977);
+    margin-top: 6px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+.left-top-card {
+    width: 40%;
+    margin-top: 150px;
+}
+.right-top-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+ .card1{
+    /* justify-content: center; */
+    width: 210px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 220px;
+    border-radius: 15px;
+    
+}
+.card1 img{
+    margin: 10px ;
+
+}
+.card1 p{
+    color: rgb(114, 114, 114);
+    font-size:12px;
+    font-weight: 500;
+}
+.view-change {
+    display: block;
+}
+.left-card-resp {
+    display: block;
+    margin-top: 25px;
+}
+@media (max-width:600px) {
+    .content-top-section{
+    display: block;
+    margin-left: 10px;
+    margin-right: 0%;
+}
+.left-top-card {
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    margin-top: 15px;
+}
+.card1{
+    /* justify-content: center; */
+    width: 90%;
+    height: 100px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+    height: 150px;
+    border-radius: 15px;
+    
+}
+.card1 a {
+    text-decoration: none;
+}
+.view-change {
+    display:  flex;
+}
+.view-change h2{
+    margin-left: 10px;
+}
+.left-card-resp {
+    margin-top: 1px;
+}
+}

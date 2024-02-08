@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PU Online Practical Lab</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/quize/tips.css">
+    <link rel="stylesheet" href="../CSS/quize/quiz-question.css">
+    <style>
+        .main-container {
+      padding: 30px;
+    }
+    
+    /* HEADING */
+    
+    .heading {
+      text-align: center;
+    }
+    
+    .heading__title {
+      font-weight: 600;
+    }
+    
+    .heading__credits {
+      margin: 10px 0px;
+      color: #888888;
+      font-size: 25px;
+      transition: all 0.5s;
+    }
+    
+    .heading__link {
+      text-decoration: none;
+    }
+    
+    .heading__credits .heading__link {
+      color: inherit;
+    }
+    
+    /* CARDS */
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .card {
+      margin: 20px;
+      padding: 20px;
+      width: 500px;
+      min-height: 220px;
+      display: grid;
+      grid-template-rows: 20px 50px 1fr 50px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+      transition: all 0.2s;
+    }
+    
+    .card:hover {
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+      transform: scale(1.01);
+    }
+    
+    .card__link,
+    .card__exit,
+    .card__icon {
+      position: relative;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .card__link::after {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      content: "";
+      width: 0%;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.6);
+      transition: all 0.5s;
+    }
+    
+    .card__link:hover::after {
+      width: 100%;
+    }
+    
+    .card__exit {
+      grid-row: 1/2;
+      justify-self: end;
+    }
+    
+    .card__icon {
+      grid-row: 2/3;
+      font-size: 30px;
+    }
+    
+    .card__title {
+      grid-row: 3/4;
+      font-weight: 400;
+      color: #ffffff;
+    }
+    
+    .card__apply {
+      grid-row: 4/5;
+      align-self: center;
+    }
+    
+    /* CARD BACKGROUNDS */
+    
+    .card-1 {
+      background: radial-gradient(#1fe4f5, #3fbafe);
+    }
+    
+    .card-2 {
+      background: radial-gradient(#fbc1cc, #fa99b2);
+    }
+    
+    .card-3 {
+      background: radial-gradient(#76b2fe, #b69efe);
+    }
+    
+    .card-4 {
+      background: radial-gradient(#60efbc, #58d5c9);
+    }
+    
+    .card-5 {
+      background: radial-gradient(#f588d8, #c0a3e5);
+    }
+    .card__description{
+        margin-bottom: 15px;
+    }
+    /* RESPONSIVE */
+    
+    @media (max-width: 1600px) {
+      .cards {
+        justify-content: center;
+      }
+    }
+    
+    </style>
+</head>
+<body>
+      <!-- Header Section Start -->
+  <header id="header">
+    <div class="container">
+      <div class="header_left">
+        <h1 class="pu-online"><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;">PU</span> Online <span class="pu-span">By PRS</span></h1>
+      </div>
+      <div class="header_right">
+        <a href="#!" class="nav_ico" id="nav_icon"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/circled-menu--v2.png" alt="circled-menu--v2"/></a>
+        <a href="#!" class="nav_ico" id="nav_icon_alt" style="display:none;"><img width="26" height="26" src="https://img.icons8.com/metro/26/cancel.png" alt="cancel"/></a>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/aboutus.html">About Us</a></li>
+            <li><a href="../pages/get-updates.html">Get Updates</a></li>
+            <li><a href="../courses/courses-page.html">Courses</a></li>
+            <li><a href="../pages/blog.html">Blog</a></li>
+            <li><a href="../pages/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div> 
+    </div>
+  </header>
+  <!-- Header Section End -->
+  
+  <!-- Header Section End -->
+  <div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">Empower Your Learning Journey with PU Online</h1>
+    </div>
+    <div class="cards">
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Enhance Your Skills with Practical Lab Sessions!</h2>
+      </div>
+      <div class="card card-2">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Apply Theories to Real-world Scenarios!</h2>
+      </div>
+      <div class="card card-3">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Sharpen Your Practical Skills with Expert Guidance!</h2>
+      </div>
+      <div class="card card-4">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Experience Immersive Learning with Practical Labs!</h2>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Footer Section start -->
+  <footer class="main-footer" style="width: 100%; padding:10px;">
+    <div class="footer-content">
+      <div class="footer-top" style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="logo-details">
+          <h3><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;margin-left: 12px;">PU</span> Online</span></h3>
+        
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="link-boxes foot-link">
+        <ul class="footer-box">
+          <li class="link_name">Company</li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/contactus.html">Contact us</a></li>
+          <li><a href="../pages/aboutus.html">About us</a></li>
+          <li><a href="../pages/get-updates.html">Get Updates</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Services</li>
+          <li><a href="../Services/Notes.html">Notes</a></li>
+          <li><a href="../Services/samlplepapers.html">Sample Papers</a></li>
+          <li><a href="../Services/practical-lab.html">Practical Lab</a></li>
+          <li><a href="../Services/ppt-pdf.html">PPT and PDF</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Quiz Service</li>
+          <li><a href="../quiz/python/python-quiz1.html">Python</a></li>
+          <li><a href="../quiz/c/c-quiz1.html">C</a></li>
+          <li><a href="../quiz/Html/html-quiz1.html">HTML</a></li>
+          <li><a href="../quiz/css/css-quiz1.html">CSS</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Courses</li>
+          <li><a href="../courses/front-end.html">Front End Developer</a></li>
+          <li><a href="../courses/full-stack.html">Full Stack Developer</a></li>
+          <li><a href="../courses/graphics-designing.html">Graphics Designing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details" style="margin-left:12px">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="../index.html">PU Online </a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="../pages/privacy-policy.html">Privacy policy</a>
+          <a href="../pages/terms-condition.html">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section end -->
+
+  <script src="../Java Script/scripts.js"></script>
+</body>
+</html>

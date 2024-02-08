@@ -1,0 +1,207 @@
+body {
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* hero-section */
+/* start */
+.hero-section {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #fce7f3, #a5f3fc);
+  color: #333;
+  overflow: hidden;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section button {
+  animation: fadeInUp 1s ease;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #003366; /* Dark blue for heading */
+}
+
+.hero-section p {
+font-size: 1.5em;
+margin-bottom: 1.5em;
+color: #001f3f; /* Light Gray */
+font-weight: 600;
+animation: typewriter 4s steps(40) 1s forwards, fadeInUp 1s ease;
+}
+
+
+.hero-section button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ff66b2; /* Pink button color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+  background-color: #ff3385; /* Darker pink on hover */
+}
+.hero-section a {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-image-container {
+  position: absolute;
+  width: 80px;
+  border-radius: 10%;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-container img {
+  width: 100%;
+}
+
+.hero-image-container:hover {
+  transform: rotate(-20deg) scale(1.2);
+}
+
+.python-image {
+  top: 70px;
+  left: 130px;
+  transform: rotate(-10deg);
+}
+
+.html-image {
+  top: 100px;
+  right: 120px;
+  transform: rotate(10deg);
+}
+
+.css-image {
+  bottom: 90px;
+  left: 120px;
+  transform: rotate(-10deg);
+}
+
+.notes-image {
+  bottom: 80px;
+  right: 140px;
+  transform: rotate(10deg);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .python-image {
+  top: 30px;
+  left: 60px;
+  transform: rotate(-10deg);
+}
+
+.html-image {
+  top: 70px;
+  right: 50px;
+  transform: rotate(10deg);
+}
+
+.css-image {
+  bottom: 50px;
+  left: 60px;
+  transform: rotate(-10deg);
+}
+
+.notes-image {
+  bottom: 70px;
+  right: 40px;
+  transform: rotate(10deg);
+}
+
+.hero-section p {
+  text-align: center;
+font-size: 1em;
+margin-bottom: 1.5em;
+margin-left: 30px;
+margin-right: 30px;
+color: #001f3f; /* Light Gray */
+font-weight: 600;
+animation: typewriter 4s steps(40) 1s forwards, fadeInUp 1s ease;
+}
+
+}
+/* end */
+
+/* APTITUDE TEST CSS */
+.apt-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  padding-top: 8%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.left-apt {
+  width: 40%;
+  margin-left: 10%;
+}
+.left-apt img {
+  border-radius: 13px;
+  width: 400px;
+  height: 400px;
+}
+.right-apt {
+  width: 40%;
+}
+.right-apt button {
+  padding: 14px 15px 14px 15px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  box-shadow: 3px 3px 5px rgb(157, 156, 156);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+@media (max-width:600px) {
+  .apt-container {
+  display: block;
+  width: 95%;
+  height: 100%;
+  padding-top: 8%;
+  align-items: center;
+  }
+.left-apt {
+  width: 100%;
+  margin: 0px;
+}
+.left-apt img {
+  margin-left: 10%;
+  border-radius: 13px;
+  width: 300px;
+  height: 300px;
+}
+.right-apt {
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+}
+}
+/* APTITUDE TEST CSS END*/

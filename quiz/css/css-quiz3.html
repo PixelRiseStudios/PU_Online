@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta name="keywords" content="Poornima University, Online Learning, Study Materials, Quizzes, Certificate Courses, Online Exams, Higher Education, Academic Excellence, Professional Development, Study Resources, Question Papers, Practice Exercises, Reference Guides, Programming, Digital Marketing, Language Proficiency, Interactive Learning, Performance Tracking, Learning Platform, Education Revolution, Convenient Learning">
+    <meta name="author" content="Sourav Chhimpa">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="PU Online">
+    <meta property="og:description" content="Discover PU Online: Your ultimate destination for comprehensive study materials, interactive quizzes, expert-led certificate courses, and convenient online exams. Join us to excel academically and professionally!">
+    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNjVXK3R5LdzE1AoHKpUhQUHmWHpcY30CjwKHKGPPlZe5y4OxXOOBhWru0Y2dBRxJXqJx2pqqyHCR61-GG1CyAHPicHGE2kqDO7nZay0zHCqv11zTGzGs51-redDX3cor3I1t3LZycUhrYLKcxlmnC8ERRcIqcDXYUl8fYs3jWdd42R9HrIhyphenhyphenmoyHv9uU/s1080/3d%20Illustration%20Online%20Course%20Learning%20Education%20Instagram%20Post.png">
+    <meta property="og:url" content="https://pixelrisestudios.github.io/PU_Online/">
+    <meta property="og:type" content="website">
+<link rel="icon" href="https://img.icons8.com/external-itim2101-lineal-color-itim2101/100/external-Online-Class-education-and-learning-itim2101-lineal-color-itim2101.png">
+    <title>CSS Styling and Effects Mastery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+    <link rel="stylesheet" href="../../CSS/header-footer.css">
+    <link rel="stylesheet" href="../../CSS/quize/tips.css">
+    <link rel="stylesheet" href="../../CSS/quize/quiz-question.css">
+
+</head>
+<body>
+      <!-- Header Section Start -->
+  <header id="header">
+    <div class="container">
+      <div class="header_left">
+        <h1 class="pu-online"><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;">PU</span> Online <span class="pu-span">By PRS</span></h1>
+      </div>
+      <div class="header_right">
+        <a href="#!" class="nav_ico" id="nav_icon"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/circled-menu--v2.png" alt="circled-menu--v2"/></a>
+        <a href="#!" class="nav_ico" id="nav_icon_alt" style="display:none;"><img width="26" height="26" src="https://img.icons8.com/metro/26/cancel.png" alt="cancel"/></a>
+        <nav class="main_nav">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/aboutus.html">About Us</a></li>
+            <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+            <li><a href="../../courses/courses-page.html">Courses</a></li>
+            <li><a href="../../pages/blog.html">Blog</a></li>
+            <li><a href="../../pages/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>    
+      </div> 
+    </div>
+  </header>
+  <!-- Header Section End -->
+
+<div class="quiz-que-container">
+  <h1>CSS Styling and Effects Mastery</h1>
+  <div id="quiz"></div>
+  <div id="results"></div>
+  <button id="submit">Submit Answers</button>
+</div>
+<script>
+  const quiz = [
+  {
+    question: "What CSS property is used to add shadows to elements?",
+    answers: [
+      { text: "box-shadow", correct: true },
+      { text: "text-shadow", correct: false },
+      { text: "shadow-color", correct: false },
+      { text: "element-shadow", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the CSS property 'transition'?",
+    answers: [
+      { text: "To add animations to elements", correct: true },
+      { text: "To change the color of text", correct: false },
+      { text: "To control the spacing between elements", correct: false },
+      { text: "To create gradients", correct: false },
+    ],
+  },
+  {
+    question: "How can you create a gradient background in CSS?",
+    answers: [
+      { text: "Using the 'gradient' property", correct: false },
+      { text: "Using the 'background-gradient' property", correct: false },
+      { text: "Using the 'linear-gradient' or 'radial-gradient' property", correct: true },
+      { text: "Using the 'color' property with multiple values", correct: false },
+    ],
+  },
+  {
+    question: "What does the CSS property 'transform' do?",
+    answers: [
+      { text: "Changes the shape of elements", correct: true },
+      { text: "Changes the position of elements", correct: false },
+      { text: "Changes the color of elements", correct: false },
+      { text: "Changes the size of elements", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the CSS property 'opacity'?",
+    answers: [
+      { text: "To make elements transparent", correct: true },
+      { text: "To change the font size of text", correct: false },
+      { text: "To add shadows to elements", correct: false },
+      { text: "To add borders to elements", correct: false },
+    ],
+  },
+  {
+    question: "How can you create an animation in CSS?",
+    answers: [
+      { text: "Using the 'animation' property", correct: true },
+      { text: "Using the 'transition' property", correct: false },
+      { text: "Using the 'transform' property", correct: false },
+      { text: "Using the 'opacity' property", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the CSS property 'filter'?",
+    answers: [
+      { text: "To apply visual effects like blur or grayscale to elements", correct: true },
+      { text: "To change the color of text", correct: false },
+      { text: "To add shadows to elements", correct: false },
+      { text: "To control the spacing between elements", correct: false },
+    ],
+  },
+  {
+    question: "How can you create rounded corners on elements in CSS?",
+    answers: [
+      { text: "Using the 'border-radius' property", correct: true },
+      { text: "Using the 'corner-radius' property", correct: false },
+      { text: "Using the 'rounded-corners' property", correct: false },
+      { text: "Using the 'border-style' property", correct: false },
+    ],
+  },
+  {
+    question: "What does the CSS property 'box-sizing: border-box;' do?",
+    answers: [
+      { text: "Includes padding and border in the element's total width and height", correct: true },
+      { text: "Excludes padding and border from the element's total width and height", correct: false },
+      { text: "Includes margin in the element's total width and height", correct: false },
+      { text: "Applies a border around the element", correct: false },
+    ],
+  },
+  {
+    question: "How can you add a drop shadow to text in CSS?",
+    answers: [
+      { text: "Using the 'text-shadow' property", correct: true },
+      { text: "Using the 'box-shadow' property", correct: false },
+      { text: "Using the 'shadow' property", correct: false },
+      { text: "Using the 'drop-shadow' property", correct: false },
+    ],
+  },
+];
+
+const quizContainer = document.getElementById("quiz");
+const resultsContainer = document.getElementById("results");
+const submitButton = document.getElementById("submit");
+
+function buildQuiz() {
+const output = [];
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answers = [];
+
+for (let i = 0; i < currentQuestion.answers.length; i++) {
+answers.push(
+  `<div class="answer" data-question="${questionNumber}" data-answer="${i}">${currentQuestion.answers[i].text}</div>`
+);
+}
+
+output.push(
+`<div class="question">${currentQuestion.question}</div>
+ <div class="answers">${answers.join("")}</div>`
+);
+});
+
+quizContainer.innerHTML = output.join("");
+}
+
+function showResults() {
+const answerContainers = quizContainer.querySelectorAll(".answers");
+
+let numCorrect = 0;
+
+quiz.forEach((currentQuestion, questionNumber) => {
+const answerContainer = answerContainers[questionNumber];
+const selector = `div[data-question="${questionNumber}"].selected`;
+const userAnswer = answerContainer.querySelector(selector);
+const isCorrect = userAnswer.dataset.answer === `${currentQuestion.answers.findIndex((answer) => answer.correct)}`;
+
+if (isCorrect) {
+numCorrect++;
+}
+
+userAnswer.classList.remove("selected");
+userAnswer.classList.add(isCorrect ? "correct" : "incorrect");
+});
+
+resultsContainer.innerHTML = `You scored ${numCorrect} out of ${quiz.length}!`;
+}
+
+function handleAnswerClick(event) {
+const answerContainer = event.target.closest(".answers");
+
+if (!answerContainer) return;
+
+const selected = answerContainer.querySelector(".selected");
+if (selected) {
+selected.classList.remove("selected");
+}
+
+const answer = event.target;
+answer.classList.add("selected");
+}
+
+function handleSubmitClick() {
+showResults();
+submitButton.disabled = true;
+}
+
+buildQuiz();
+
+quizContainer.addEventListener("click", handleAnswerClick);
+submitButton.addEventListener("click", handleSubmitClick);
+</script>
+
+  <div class="next-container">
+    <a href="css-quiz2.html">    <button class="btn prev"><i class="fas fa-chevron-left"></i>Previous</button></a>
+    <a href="css-quiz4.html">    <button class="btn next">Next<i class="fas fa-chevron-right"></i></button></a>
+</div>
+  <!-- Footer Section start -->
+  <footer class="main-footer" style="width: 100%; padding:10px;">
+    <div class="footer-content">
+      <div class="footer-top" style="display: flex;justify-content: space-between;align-items: center;">
+        <div class="logo-details">
+          <h3><span style="background-color: lightskyblue; border: 5px solid lightskyblue; border-radius: 6px;margin-left: 12px;">PU</span> Online</span></h3>
+        
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="link-boxes foot-link">
+        <ul class="footer-box">
+          <li class="link_name">Company</li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../pages/contactus.html">Contact us</a></li>
+          <li><a href="../../pages/aboutus.html">About us</a></li>
+          <li><a href="../../pages/get-updates.html">Get Updates</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Services</li>
+          <li><a href="../../Services/Notes.html">Notes</a></li>
+          <li><a href="../../Services/samlplepapers.html">Sample Papers</a></li>
+          <li><a href="../../Services/practical-lab.html">Practical Lab</a></li>
+          <li><a href="../../Services/ppt-pdf.html">PPT and PDF</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Quiz Service</li>
+          <li><a href="../../quiz/python/python-quiz1.html">Python</a></li>
+          <li><a href="../../quiz/c/c-quiz1.html">C</a></li>
+          <li><a href="../../quiz/Html/html-quiz1.html">HTML</a></li>
+          <li><a href="../../quiz/css/css-quiz1.html">CSS</a></li>
+        </ul>
+        <ul class="footer-box">
+          <li class="link_name">Courses</li>
+          <li><a href="../../courses/front-end.html">Front End Developer</a></li>
+          <li><a href="../../courses/full-stack.html">Full Stack Developer</a></li>
+          <li><a href="../../courses/graphics-designing.html">Graphics Designing</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details" style="margin-left:12px">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="../../index.html">PU Online </a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="../../pages/privacy-policy.html">Privacy policy</a>
+          <a href="../../pages/terms-condition.html">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section end -->
+
+  <script src="../../Java Script/scripts.js"></script>
+</body>
+</html>
